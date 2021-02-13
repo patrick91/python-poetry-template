@@ -1,0 +1,16 @@
+{
+  "name": "Python 3",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "python.pythonPath": ".venv/bin/python"
+  },
+
+  "extensions": ["ms-python.python", "ms-python.vscode-pylance", "esbenp.prettier-vscode"],
+
+  "postCreateCommand": "sh .devcontainer/setup.sh"
+}
